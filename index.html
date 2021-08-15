@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./CSS/style.css">
+  
+  <title>Frontend Mentor | pricing component</title>
+
+
+</head>
+<body>
+<header>
+  <h1 class="heading">
+    Our Pricing
+  </h1>
+  
+  <!-- Rounded switch -->
+  
+  
+  <dTiv class="switch-container">
+    <span class="time"> Annually</span>
+    <label class="switch" id="switch">
+      <input type="checkbox" id="myCheck" onclick="myFunction()">
+     <span class="slider round"></span>
+   </label>
+    <span class="time"> Monthly</span>
+  </dTiv>
+  
+</header>
+<div class="container">
+  
+ <div class="price-component">
+  <h2 class="plan"> Basic</h2>
+ <h2 class="price monthly">   &dollar;19.99</h2>
+   <h2 class="price annually"> &dollar;199.99</h2>
+   <ul class="specs-items">
+    <l1 class="specs"> 500 GB Storage</l1>
+    <l1 class="specs"> 2 Users Allowed</l1>
+    <l1 class="specs">Send up to 3 GB</l1>
+   </ul>
+   <button class="btn purple-btn"> Learn More</button>
+   </div>
+  
+  
+   <div class="price-component dark">
+  <h2 class="plan">  Professional</h2>
+  <h2 class="price monthly">   &dollar;24.99</h2>
+  <h2 class="price annually"> &dollar;249.99</h2>
+   <ul class="specs-items">
+    <li class="specs"> 1 TB Storage</li>
+    <li class="specs"> 5 Users Allowed</li>
+    <li class="specs"> Send up to 10 GB</li>
+   </ul>
+    <button class="btn transparent"> Learn More</button>
+   </div>
+  
+  
+   <div class="price-component">
+  <h3 class="plan">  Master</h3>
+
+    <h2 class="price monthly">   &dollar;39.99</h2>
+    <h2 class="price annually"> &dollar;399.99</h3>
+   <ul class="specs-items">
+    <li class="specs">   2 TB Storage</li>
+    <li class="specs">10 Users Allowed</li>
+    <li class="specs">  Send up to 20 GB</li>
+   </ul>
+ 
+    
+  
+    <button class="btn purple-btn"> Learn More</button>
+   </div>
+    
+</div>
+  <script src="/assets/script.js"></script>
+</body>
+</html>

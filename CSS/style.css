@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  padding: 2px;
+  font-size: 15px;
+  background-color: hsl(240, 78%, 98%);
+  background: url("../images/bg-top.svg") top right no-repeat,
+    url("../images/bg-bottom.svg") left bottom no-repeat, hsl(240, 78%, 98%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+button {
+  border: transparent;
+  outline: transparent;
+  width: 15rem;
+  height: 2.3rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: 10ms;
+}
+.btn {
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  color: white;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+.btn:hover {
+  border: 2px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+  background: white;
+}
+.transparent {
+  background: white;
+  color: hsl(237, 63%, 64%);
+}
+.transparent:hover {
+  border: 2px solid white;
+  background: hsl(237, 63%, 64%);
+  color: white;
+}
+/* TYPO */
+.heading {
+  color: hsl(233, 13%, 49%);
+  font-weight: 900;
+  font-size: 3rem;
+}
+.time {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: hsl(233, 13%, 49%);
+}
+.plan {
+  color: hsl(233, 13%, 49%);
+  padding: 15px 0;
+}
+
+.price {
+  font-size: 3.2rem;
+  color: hsl(232, 13%, 33%);
+  font-weight: bolder;
+
+  padding: 10px 0;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:hover {
+  opacity: 0.5;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px hsl(237, 63%, 64%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  width: 100%;
+}
+.specs-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/* BODY */
+.container {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.price-component {
+  background: white;
+  width: 20rem;
+  text-align: center;
+  color: hsl(232, 13%, 33%);
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+.monthly {
+  display: none;
+}
+
+.dark {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  height: 410px;
+}
+.dark .plan,
+.dark .price,
+.dark .specs {
+  color: white;
+}
+
+.dark .specs {
+  border-top: 1px solid white;
+}
+.specs-items {
+  flex-direction: column;
+}
+
+.specs {
+  font-size: 1.2rem;
+  border-top: 1px solid hsl(233, 13%, 49%);
+  padding: 10px;
+  font-weight: 600;
+}
